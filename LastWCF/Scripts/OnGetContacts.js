@@ -1,0 +1,3 @@
+﻿$("#getallcontacts").click(function () {
+    PrintContactsFromDB();
+})

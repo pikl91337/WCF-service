@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Final i hope</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+          crossorigin="anonymous">
+    <meta charset="utf-8" />
+    <script src="Scripts/jquery-3.4.1.min.js"></script>
+    <link href="main.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/themes/redmond/jquery-ui.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.14.0/css/ui.jqgrid.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.14.0/jquery.jqgrid.min.js"></script>
+
+
+
+</head>
+<body>
+    <div class="row">
+        <div class="col-md-2">
+            <table id="showContacts"></table>
+            <div id="gridpager"></div>
+        </div>
+        <div class="col-md-10">
+            <form id="main_form">
+                <p class="text-uppercase pull-center">Contact</p>
+                <!--onsubmit="CreateContact()-->
+                <input id="firstname" required type="text" value="" value placeholder="First Name" size=20>
+                <p></p>
+                <input id="middlename" required type="text" value="" value placeholder="Middle Name" size=20>
+                <p></p>
+                <input id="lastname" required type="text" value="" value placeholder="Last Name" size=20>
+                <p></p>
+                <input id="inn" required type="text" value="" value placeholder="Inn (number)" size=20>
+                <p></p>
+                <div class="inp">
+                    <input id="day" required size="2" maxlength="2" value="" value
+                           placeholder="DD">
+                    <p></p>
+                    <input id="month" required size="2" maxlength="2" value="" value
+                           placeholder="MM">
+                    <p></p>
+                    <input id="year" required size="2" maxlength="4" value="" value
+                           placeholder="YYYY">
+                </div>
+                <p></p>
+                <input id="gender" required maxlength="3" value="" value placeholder="Gender">
+                <p></p>
+                <input id="phone" required type="text" value="" value placeholder="Phone Number" size=20>
+                <p></p>
+
+                <input id="id" size="20" maxlength="5" value="" value
+                       placeholder="Input ID to update or delete">
+                <p></p>
+                <!--<input id="create" type="submit" class="button_send" value="Create">-->
+                <div class="inp">
+                    <input type="button" id="create" class="button_send" value="Create">
+                    <p></p>
+                    <input type="button" id="update" class="button_send" value="Update">
+                </div>
+                <p></p>
+                <div class="inp">
+                    <input type="button" id="delete" class="button_send" value="Delete">
+                    <p></p>
+                    <input type="button" id="show" class="button_send" value=" Show ">
+                </div>
+
+            </form>
+        </div>
+    </div>
+    <!--<form id="get_contact_to_update_form">
+        onsubmit="GetContactToUpdate()"
+    <input id="id" required size="20" maxlength="5" value="" value
+           placeholder="Search by ID to update">
+    <input type="button" id="get_to_update" class="button_send" value="Get">
+        >
+    </form>
+    <form id="update_form" onsubmit="Update()">
+        <input type="submit" id="updatee" class="button_send" value="Update">
+    </form>
+
+        <form id="delete_contact_form" onsubmit="DeleteContact()">
+            <input id="id_to_delete" required size="20" maxlength="5" value="" value
+                   placeholder="Search by ID to delete">
+            <input type="submit" id="delete_contact" class="button_send" value="Delete">
+        </form>
+        -->
+
+
+
+    <script src="Scripts/main.js"></script>
+</body>
+</html>
